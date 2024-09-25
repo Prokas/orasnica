@@ -198,7 +198,7 @@ combo_##NAME { \
             bindings = <
 &trans     &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &kp INSERT  &trans
 &kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &trans        &trans    &kp UP          &trans      &kp TAB
-&trans     &kp HOME       &kp PG_DN      &kp END          &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp COLON
+&trans     &trans         &trans         &trans           &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp COLON
                           &trans                                                                &trans
             >;
 
