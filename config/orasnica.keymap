@@ -11,11 +11,18 @@
 
 / {
     macros {
-        macro_sch: macro_sch {
-            label = "Macro_SCH";
+        fullscreen: fullscreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp S &kp C &kp H>;
+            bindings = <&kp LC(LA(LG(M)))>;
+            label = "FULLSCREEN";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            label = "SCREENSHOT";
         };
     };
 };
@@ -213,10 +220,10 @@ combo_##NAME { \
         function {
             label = "FUN";
             bindings = <
-&trans       &kp SQT  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12  &kp F7  &kp F8  &kp F9  &trans
-&trans       &trans   &trans         &trans            &kp BACKSLASH      &kp F11  &kp F4  &kp F5  &kp F6  &kp F10
-&bootloader  &trans   &trans         &trans            &trans             &trans   &kp F1  &kp F2  &kp F3  &trans
-                      &trans                                                               &trans
+&trans       &kp SQT  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12      &kp F7  &kp F8  &kp F9  &trans
+&trans       &trans   &trans         &trans            &kp BACKSLASH      &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
+&bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
+                      &trans                                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
