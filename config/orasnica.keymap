@@ -208,7 +208,7 @@ combo_##NAME { \
         symbols {
             label = "SYM";
             bindings = <
-&trans    &kp GRAVE  &kp DQT   &kp RA(LS(SEMI))  &kp LBRC  &kp RBRC  &kp BACKSLASH  &kp PIPE      &kp LT       &trans
+&trans    &kp GRAVE  &kp DQT   &kp RA(LS(SEMI))  &kp LBRC  &kp RBRC  &kp BACKSLASH  &kp PIPE      &kp LT       &kp GREATER_THAN
 &kp EXCL  &kp AT     &kp HASH  &kp DOLLAR        &kp LPAR  &kp RPAR  &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &kp CARET
 &trans    &kp TILDE  &kp SQT   &kp UNDERSCORE    &trans    &trans    &kp MINUS      &kp PLUS      &kp EQUAL    &trans
                      &kp RBKT                                                       &trans
