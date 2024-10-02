@@ -170,7 +170,7 @@ combo_##NAME { \
         aptmak {
             label = "APT";
             bindings = <
-&kp RG(W)    &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &trans
+&kp K_MUTE   &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &trans
 &hl LCTRL A  &hl LALT S  &hl LGUI D    &hl LSHFT F  &hl RALT G        &hr RALT N            &hr RSHFT J  &hr RGUI K    &hr LALT L  &hr RCTRL P
 &kp SQT      &kp C       &kp V         &kp B        &my_lt NAV SPACE  &my_lt SYM BACKSPACE  &kp M        &comsem       &dotcol     &kp ENTER
                          &my_lt NUM X                                                                    &my_lt FUN H
@@ -191,7 +191,7 @@ combo_##NAME { \
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_INC>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
                 <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
