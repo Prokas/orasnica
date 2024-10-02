@@ -170,14 +170,14 @@ combo_##NAME { \
         aptmak {
             label = "APT";
             bindings = <
-&kp RG(W)    &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &kp P
+&kp RG(W)    &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &trans
 &hl LCTRL A  &hl LALT S  &hl LGUI D    &hl LSHFT F  &hl RALT G        &hr RALT N            &hr RSHFT J  &hr RGUI K    &hr LALT L  &hr RCTRL P
 &kp SQT      &kp C       &kp V         &kp B        &my_lt NAV SPACE  &my_lt SYM BACKSPACE  &kp M        &comsem       &dotcol     &kp ENTER
                          &my_lt NUM X                                                                    &my_lt FUN H
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>,
                 <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
@@ -190,7 +190,9 @@ combo_##NAME { \
                            &trans                                                           &kp KP_NUMBER_0
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_INC>,
+                <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         navigation {
@@ -202,7 +204,9 @@ combo_##NAME { \
                              &trans                                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         symbols {
