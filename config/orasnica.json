@@ -55,7 +55,7 @@
 		{
 			"ref":  "encoder2",
 			"name":  "ENCODER2",
-			"identifier":  "encoder1",
+			"identifier":  "encoder2",
 			"compatible": "alps,ec11",
 			"enabled": true
 		}
