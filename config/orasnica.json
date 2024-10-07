@@ -43,7 +43,7 @@
 			]
 		}
 	},
-	"sensors" [
+	"sensors": [
 		{
 			"ref":  "encoder",
 			"name":  "ENCODER",
@@ -52,5 +52,4 @@
 			"enabled": true
 		}
 	]
-   
 }
