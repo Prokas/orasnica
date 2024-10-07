@@ -220,7 +220,6 @@ combo_##NAME { \
                       &trans                                                                   &trans
             >;
  {
-        compatible = "orasnica.leymap";
 
         bindings = <&kp VOL_UP>, <&kp VOL_DOWN>; // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
         bindings = <&kp PGUP>, <&kp PGDN>;       // Primer za enkoder 2 (skrolovanje stranica gore/dole)
