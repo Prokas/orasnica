@@ -149,7 +149,7 @@ combo_##NAME { \
     };
 };
 
-&encoder { status = "okay"; };
+&encoder1 { status = "okay"; };
 
 &encoder2 { status = "okay"; };
 
