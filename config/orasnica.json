@@ -49,7 +49,7 @@
 			"name":  "ENCODER1",
 			"identifier":  "encoder1",
 			"compatible": "alps,ec11",
-			"enabled": true,
+			"enabled": true
 			
 			"ref":  "encoder2",
 			"name":  "ENCODER2",
