@@ -50,7 +50,10 @@
 			"identifier":  "encoder1",
 			"compatible": "alps,ec11",
 			"enabled": true
-			
+			}
+		]
+	"sensors2": [
+		{
 			"ref":  "encoder2",
 			"name":  "ENCODER2",
 			"identifier":  "encoder2",
