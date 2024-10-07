@@ -44,9 +44,9 @@
             ;
     };
 
-    encoder: encoder1 {
+    encoder: encoder {
         compatible = "alps,ec11";
-        label = "encoder1";
+        label = "ENCODER";
         a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
@@ -54,7 +54,7 @@
 
     encoder2: encoder2 {
         compatible = "alps,ec11";
-        label = "encoder2";
+        label = "ENCODER2";
         a-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
