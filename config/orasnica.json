@@ -43,22 +43,17 @@
 			]
 		}
 	},
-	"sensors":[
-		{
-			"ref":  "encoder1",
-			"name":  "ENCODER1",
-			"identifier":  "encoder",
-			"compatible": "alps,ec11",
-			"enabled": true
-		}
-	
-		{
-			"ref":  "encoder2",
-			"name":  "ENCODER2",
-			"identifier":  "encoder2",
-			"compatible": "alps,ec11",
-			"enabled": true
-		}
-	
-	
+	"sensors": {
+            compatible = "zmk,keymap-sensors";
+            sensors = <&encoder1 &encoder2>;
+
+            encoder1 {
+                triggers-per-rotation = <2>;  
+
+            encoder2 {
+                triggers-per-rotation = <2>;  
+            };
+        };
+    };
+};
    
