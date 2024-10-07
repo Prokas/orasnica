@@ -219,7 +219,7 @@ combo_##NAME { \
 &bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
                       &trans                                                                   &trans
             >;
-/ {
+ {
         compatible = "zmk,keymap";
 
         bindings = <&kp VOL_UP>, <&kp VOL_DOWN>; // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
