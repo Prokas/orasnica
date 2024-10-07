@@ -48,7 +48,6 @@ combo_##NAME { \
         COMBO(esc, &kp ESC, 22 23)
 
         /* parentheticals */
-
         /* caps */
 
         COMBO(caps, &caps_word, 13 16)
@@ -161,7 +160,7 @@ combo_##NAME { \
         aptmak {
             label = "APT";
             bindings = <
-&kp K_MUTE   &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &trans
+&kp K_MUTE   &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &kp LC(UP_ARROW)
 &hl LCTRL A  &hl LALT S  &hl LGUI D    &hl LSHFT F  &hl RALT G        &hr RALT N            &hr RSHFT J  &hr RGUI K    &hr LALT L  &hr RCTRL P
 &kp SQT      &kp C       &kp V         &kp B        &my_lt NAV SPACE  &my_lt SYM BACKSPACE  &kp M        &comsem       &dotcol     &kp ENTER
                          &my_lt NUM X                                                                    &my_lt FUN H
