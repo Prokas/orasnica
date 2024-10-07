@@ -220,7 +220,8 @@ combo_##NAME { \
                       &trans                                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+        bindings = <&kp VOL_UP>, <&kp VOL_DOWN>;  // Enkoder 1 - povećanje i smanjenje jačine zvuka
+        bindings = <&kp PGUP>, <&kp PGDN>;        // Enkoder 2 - skrolovanje stranica gore/dole
         };
     };
 };
