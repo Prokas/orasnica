@@ -220,7 +220,6 @@ combo_##NAME { \
                       &trans                                                                   &trans
             >;
 / {
-    keymap {
         compatible = "zmk,keymap";
 
         bindings = <&kp VOL_UP>, <&kp VOL_DOWN>; // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
