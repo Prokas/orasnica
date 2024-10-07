@@ -49,15 +49,6 @@ combo_##NAME { \
 
         /* parentheticals */
 
-        COMBO(lbrc, &kp LBRC, 1 11)
-        COMBO(lbkt, &kp LBKT, 2 12)
-        COMBO(lpar, &kp LPAR, 3 13)
-        COMBO(lt, &kp LT, 4 14)
-        COMBO(gt, &kp GT, 5 15)
-        COMBO(rpar, &kp RPAR, 6 16)
-        COMBO(rbkt, &kp RBKT, 7 17)
-        COMBO(rbrc, &kp RBRC, 8 18)
-
         /* caps */
 
         COMBO(caps, &caps_word, 13 16)
