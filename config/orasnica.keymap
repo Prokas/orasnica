@@ -219,9 +219,14 @@ combo_##NAME { \
 &bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
                       &trans                                                                   &trans
             >;
+/ {
+    keymap {
+        compatible = "zmk,keymap";
 
-        bindings = <&kp VOL_UP>, <&kp VOL_DOWN>;  // Enkoder 1 - povećanje i smanjenje jačine zvuka
-        bindings = <&kp PGUP>, <&kp PGDN>;        // Enkoder 2 - skrolovanje stranica gore/dole
+        bindings = <&kp VOL_UP>, <&kp VOL_DOWN>; // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
+        bindings = <&kp PGUP>, <&kp PGDN>;       // Primer za enkoder 2 (skrolovanje stranica gore/dole)
+    };
+};
         };
     };
 };
