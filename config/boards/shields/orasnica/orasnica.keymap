@@ -186,7 +186,12 @@ combo_##NAME { \
                 &trans         &trans         &trans         &trans         &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                                                             &trans         &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			keymap {
+    compatible = "zmk,keymap";
+
+    bindings = <&kp VOL_UP>, <&kp VOL_DOWN>;  // Encoder 1: Volume control
+    bindings = <&kp PGUP>, <&kp PGDN>;        // Encoder 2: Page up/down
+
         };
 	};
 };
