@@ -157,7 +157,7 @@ combo_##NAME { \
     keymap {
         compatible = "zmk,keymap";
 
-        aptmak {
+        macos {
             label = "proka";
             bindings = <
 &kp K_MUTE   &kp W       &kp E         &kp R        &kp T             &kp Z                 &kp U        &kp I         &kp O       &kp LC(UP_ARROW)
@@ -223,9 +223,12 @@ combo_##NAME { \
             {
 
             bindings = <&kp VOL_UP>, <&kp VOL_DOWN>;
- // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
+
+            // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
+
             bindings = <&kp PGUP>, <&kp PGDN>;
-       // Primer za enkoder 2 (skrolovanje stranica gore/dole)
+
+            // Primer za enkoder 2 (skrolovanje stranica gore/dole)
         };
     };
 };
