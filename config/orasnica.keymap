@@ -180,10 +180,7 @@ combo_##NAME { \
                            &trans                                                           &kp KP_NUMBER_0
             >;
 
-            sensor-bindings = <
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
-        };
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;        };
 
         navigation {
             label = "NAV";
@@ -204,8 +201,6 @@ sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL
 &trans    &kp TILDE  &kp SQT   &kp UNDERSCORE    &trans    &trans    &kp MINUS      &kp PLUS      &kp EQUAL    &trans
                      &kp RBKT                                                       &trans
             >;
-sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
-        
         };
 
         function {
@@ -216,7 +211,6 @@ sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL
 &bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
                       &trans                                                                   &trans
             >;
-sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
             
         };
     };
