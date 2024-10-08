@@ -166,7 +166,7 @@ combo_##NAME { \
                          &my_lt NUM X                                                                    &my_lt FUN H
             >;
 
-            sensor-bindings =
+            sensor-bindings = <
                 <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>,
                 <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
@@ -180,7 +180,7 @@ combo_##NAME { \
                            &trans                                                           &kp KP_NUMBER_0
             >;
 
-            sensor-bindings =
+            sensor-bindings = <
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
                 <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
@@ -193,10 +193,7 @@ combo_##NAME { \
 &trans     &trans            &trans         &trans           &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp COLON
                              &trans                                                                &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+;
         };
 
         symbols {
@@ -208,7 +205,7 @@ combo_##NAME { \
                      &kp RBKT                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+        
         };
 
         function {
@@ -220,15 +217,7 @@ combo_##NAME { \
                       &trans                                                                   &trans
             >;
 
-            {
-
-            bindings = <&kp VOL_UP>, <&kp VOL_DOWN>;
-
-            // Primer za enkoder 1 (pojačavanje i smanjivanje zvuka)
-
-            bindings = <&kp PGUP>, <&kp PGDN>;
-
-            // Primer za enkoder 2 (skrolovanje stranica gore/dole)
+            
         };
     };
 };
