@@ -47,11 +47,11 @@
   {
     "name": "encoder1",
     "type": "rotary",
-    "gpio": "appropriate GPIO pin for encoder 1"
+    "gpio": "10 9"
   },
   {
     "name": "encoder2",
     "type": "rotary",
-    "gpio": "appropriate GPIO pin for encoder 2"
+    "gpio": "24 22"
   }
 ]
