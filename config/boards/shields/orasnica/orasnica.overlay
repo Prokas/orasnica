@@ -44,28 +44,26 @@
             ;
     };
 
-  &encoder1 {
-    compatible = "gpio-rotary-encoder";
-    gpios = <&gpio 10 9 (GPIO_ACTIVE_LOW)>;  // Adjust for actual GPIO pins
-    steps-per-period = <2>;
-};
-
-&encoder2 {
-    compatible = "gpio-rotary-encoder";
-    gpios = <&gpio 24 22 (GPIO_ACTIVE_LOW)>;
-    steps-per-period = <2>;
-};
-
-sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&encoder1, &encoder2>;
-
-    encoder1 {
-        triggers-per-rotation = <4>;  // Adjust this based on your needs
+encoder: encoder {
+        compatible = "alps,ec11";
+        label = "ENCODER";
+        a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <2>;
     };
 
-    encoder2 {
-        triggers-per-rotation = <4>;
+    encoder2: encoder2 {
+        compatible = "alps,ec11";
+        label = "ENCODER2";
+        a-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <2>;
     };
-};
 
+    sensors {
+    	compatible = "zmk,keymap-sensors";
+    	sensors = <
+    		&encoder
+    		&encoder2
+    	>;
+    };
