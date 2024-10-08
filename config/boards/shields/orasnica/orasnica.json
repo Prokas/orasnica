@@ -45,17 +45,6 @@
 	},
 "sensors": [
   {
-    "name": "encoder1",
-    "type": "rotary",
-    "gpio": "appropriate GPIO pin for encoder 1"
-  },
-  {
-    "name": "encoder2",
-    "type": "rotary",
-    "gpio": "appropriate GPIO pin for encoder 2"
-  }
-	"sensors": [
-  {
     "ref": "encoder1",
     "name": "ENCODER1",
     "identifier": "encoder1",
