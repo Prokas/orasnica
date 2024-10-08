@@ -51,7 +51,7 @@
     "compatible": "alps,ec11",
     "enabled": true
   },
-  {
+
     "ref": "encoder2",
     "name": "ENCODER2",
     "identifier": "encoder2",
