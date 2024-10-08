@@ -57,5 +57,5 @@
     "identifier": "encoder2",
     "compatible": "alps,ec11",
     "enabled": true
-  }
+  
 ]
