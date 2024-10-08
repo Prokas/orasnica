@@ -166,9 +166,9 @@ combo_##NAME { \
                          &my_lt NUM X                                                                    &my_lt FUN H
             >;
 
-            sensor-bindings = <
-                <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>,
-                <&inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+         sensor-bindings = <
+&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp
+ C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         numbers {
@@ -193,7 +193,7 @@ combo_##NAME { \
 &trans     &trans            &trans         &trans           &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp COLON
                              &trans                                                                &trans
             >;
-;
+sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         symbols {
@@ -204,7 +204,7 @@ combo_##NAME { \
 &trans    &kp TILDE  &kp SQT   &kp UNDERSCORE    &trans    &trans    &kp MINUS      &kp PLUS      &kp EQUAL    &trans
                      &kp RBKT                                                       &trans
             >;
-
+sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         
         };
 
@@ -216,7 +216,7 @@ combo_##NAME { \
 &bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
                       &trans                                                                   &trans
             >;
-
+sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
             
         };
     };
