@@ -44,15 +44,15 @@
             ;
     };
 
-   &encoder1 {
+  &encoder1 {
     compatible = "gpio-rotary-encoder";
-    gpios = <&gpio10 9 (GPIO_ACTIVE_LOW)>;  // Replace with your actual GPIO pins
+    gpios = <&gpio10 9 (GPIO_ACTIVE_LOW)>;  // Adjust for actual GPIO pins
     steps-per-period = <2>;
 };
 
 &encoder2 {
     compatible = "gpio-rotary-encoder";
-    gpios = <&gpio24 22 (GPIO_ACTIVE_LOW)>;  // Replace with your actual GPIO pins
+    gpios = <&gpio24 22 (GPIO_ACTIVE_LOW)>;
     steps-per-period = <2>;
 };
 
@@ -61,15 +61,11 @@ sensors {
     sensors = <&encoder1 &encoder2>;
 
     encoder1 {
-        triggers-per-rotation = <4>;  // Configure trigger per rotation
+        triggers-per-rotation = <4>;  // Adjust this based on your needs
     };
 
     encoder2 {
-        triggers-per-rotation = <4>;  // Configure trigger per rotation
-    };
-};
-            };
-        };
+        triggers-per-rotation = <4>;
     };
 };
 
