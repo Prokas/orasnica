@@ -46,13 +46,13 @@
 
   &encoder1 {
     compatible = "gpio-rotary-encoder";
-    gpios = <&gpio10 9 (GPIO_ACTIVE_LOW)>;  // Adjust for actual GPIO pins
+    gpios = <&gpio 10 9 (GPIO_ACTIVE_LOW)>;  // Adjust for actual GPIO pins
     steps-per-period = <2>;
 };
 
 &encoder2 {
     compatible = "gpio-rotary-encoder";
-    gpios = <&gpio24 22 (GPIO_ACTIVE_LOW)>;
+    gpios = <&gpio 24 22 (GPIO_ACTIVE_LOW)>;
     steps-per-period = <2>;
 };
 
