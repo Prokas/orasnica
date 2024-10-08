@@ -164,7 +164,7 @@ combo_##NAME { \
                 &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                                                                              &trans         &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+		
         };
         symbols {
             label = "SYM";
@@ -175,7 +175,7 @@ combo_##NAME { \
                 &trans         &kp TILDE      &kp SQT        &kp UNDERSCORE   &trans         &trans         &kp MINUS      &kp PLUS       &kp EQUAL      &trans
                                                                               &kp RBKT       &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			
         };
         function {
             label = "FUN";
@@ -186,7 +186,7 @@ combo_##NAME { \
                 &trans         &trans         &trans         &trans         &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                                                             &trans         &trans
             >;
-	sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+	
         };
 	};
 };
