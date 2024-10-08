@@ -45,18 +45,6 @@
 	},
 	"sensors": [
   {
-    "name": "encoder1",
-    "type": "rotary",
-    "gpio": "10 9"
-  },
-  {
-    "name": "encoder2",
-    "type": "rotary",
-    "gpio": "24 22"
-  }
-]
-"sensors": [
-  {
     "ref": "encoder1",
     "name": "ENCODER1",
     "identifier": "encoder1",
