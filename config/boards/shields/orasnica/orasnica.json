@@ -43,14 +43,13 @@
 			]
 		}
 	},
-"sensors": [
-  {
-    "ref": "encoder",
-    "name": "ENCODER",
-    "identifier": "encoder",
-    "compatible": "alps,ec11",
-    "enabled": true
-  }
-		
+	"sensors": [
+		{
+			"ref":  "encoder",
+			"name":  "ENCODER",
+			"identifier":  "encoder",
+			"compatible": "alps,ec11",
+			"enabled": true
+		}
 	]
 }
