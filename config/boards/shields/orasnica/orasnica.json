@@ -54,4 +54,20 @@
     "type": "rotary",
     "gpio": "appropriate GPIO pin for encoder 2"
   }
+	"sensors": [
+  {
+    "ref": "encoder1",
+    "name": "ENCODER1",
+    "identifier": "encoder1",
+    "compatible": "alps,ec11",
+    "enabled": true
+  },
+  {
+    "ref": "encoder2",
+    "name": "ENCODER2",
+    "identifier": "encoder2",
+    "compatible": "alps,ec11",
+    "enabled": true
+  }
+]
 ]
