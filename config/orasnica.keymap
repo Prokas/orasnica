@@ -165,10 +165,10 @@ combo_##NAME { \
 &kp SQT      &kp C       &kp V         &kp B        &my_lt NAV SPACE  &my_lt SYM BACKSPACE  &kp M        &comsem       &dotcol     &kp ENTER
                          &my_lt NUM X                                                                    &my_lt FUN H
             >;
-sensor-bindings = <
-				&inc_dec_kp C_VOL_DN C_VOL_UP
-				&inc_dec_kp PAGE_DOWN PAGE_UP
-			>;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         numbers {
@@ -179,11 +179,12 @@ sensor-bindings = <
 &trans        &kp N3       &kp N2       &kp N1        &trans          &kp NUMBER_0  &kp N1  &kp N2           &kp N3  &trans
                            &trans                                                           &kp KP_NUMBER_0
             >;
-sensor-bindings = <
+
+            sensor-bindings = <
 				&inc_dec_kp C_VOL_DN C_VOL_UP
 				&inc_dec_kp PAGE_DOWN PAGE_UP
->;
-                   };
+            >;
+        };
 
         navigation {
             label = "NAV";
@@ -192,11 +193,12 @@ sensor-bindings = <
 &kp LCTRL  &hl LALT LEFT     &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &trans        &trans    &kp UP          &trans      &kp TAB
 &trans     &trans            &trans         &trans           &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp COLON
                              &trans                                                                &trans
-               >;
-			sensor-bindings = <
+            >;
+
+            sensor-bindings = <
 				&inc_dec_kp C_VOL_DN C_VOL_UP
 				&inc_dec_kp PAGE_DOWN PAGE_UP
-			>;
+            >;
         };
 
         symbols {
@@ -206,12 +208,14 @@ sensor-bindings = <
 &kp EXCL  &kp AT     &kp HASH  &kp DOLLAR        &kp LPAR  &kp RPAR  &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &kp CARET
 &trans    &kp TILDE  &kp SQT   &kp UNDERSCORE    &trans    &trans    &kp MINUS      &kp PLUS      &kp EQUAL    &trans
                      &kp RBKT                                                       &trans
-          >;
-			sensor-bindings = <
+            >;
+
+            sensor-bindings = <
 				&inc_dec_kp C_VOL_DN C_VOL_UP
 				&inc_dec_kp PAGE_DOWN PAGE_UP
-			>;
+            >;
         };
+
         function {
             label = "FUN";
             bindings = <
@@ -220,10 +224,11 @@ sensor-bindings = <
 &bootloader  &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &trans
                       &trans                                                                   &trans
             >;
-      	sensor-bindings = <
+
+            sensor-bindings = <
 				&inc_dec_kp C_VOL_DN C_VOL_UP
 				&inc_dec_kp PAGE_DOWN PAGE_UP
-			>;
+            >;
         };
-	};
+    };
 };
