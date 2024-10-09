@@ -168,7 +168,7 @@ combo_##NAME { \
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp C_BRI_DEC C_BRIGHTNESS_INC>;
         };
 
         numbers {
