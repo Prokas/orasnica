@@ -243,10 +243,10 @@ combo_##NAME { \
 
         layer_6 {
             bindings = <
-&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans                                                 &tog 6
+&trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &kp DOWN_ARROW  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans                                                   &tog 6
             >;
         };
     };
