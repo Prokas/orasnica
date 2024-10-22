@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define APT 0
 #define NUM 1
@@ -241,12 +242,12 @@ combo_##NAME { \
             >;
         };
 
-        layer_6 {
+        gaming {
             bindings = <
-&trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &kp DOWN_ARROW  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans                                                   &tog 6
+&trans        &kp NUMBER_1  &kt NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &trans  &trans  &trans  &trans
+&kp N5        &kp Q         &kp W         &kp E         &kp R         &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_6  &kp A         &kp S         &kp D         &kp F         &trans  &trans  &trans  &trans  &trans
+                            &trans                                                    &tog 6
             >;
         };
     };
