@@ -47,13 +47,7 @@ combo_##NAME { \
         COMBO(slash, &kp SLASH, 27 28)
         COMBO(dash, &kp MINUS, 26 27)
         COMBO(enter, &kp ENTER, 26 28)
-        COMBO(esc, &kp ESC, 22 23)
-
-        /* parentheticals */
-        /* caps */
-
-        COMBO(caps, &caps_word, 13 16)
-        COMBO(capslock, &kp CAPSLOCK, 1 8)
+        COMBO(esc, &kp ESC, 22 23
 
         /* deletion */
 
