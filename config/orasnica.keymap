@@ -30,7 +30,7 @@
 };
 
 / {
-    global-tapping-term-ms = <50>;
+    global-tapping-term-ms = <100>;
 };
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
@@ -113,7 +113,7 @@ combo_##NAME { \
 
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <100>;
 
             // global-quick-tap;
 
