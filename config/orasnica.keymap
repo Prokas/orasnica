@@ -30,7 +30,7 @@
 };
 
 / {
-    global-tapping-term-ms = <300>;
+    global-tapping-term-ms = <50>;
 };
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
