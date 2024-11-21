@@ -47,7 +47,8 @@ combo_##NAME { \
         COMBO(slash, &kp SLASH, 27 28)
         COMBO(dash, &kp MINUS, 26 27)
         COMBO(enter, &kp ENTER, 26 28)
-        COMBO(esc, &kp ESC, 22 23
+        COMBO(esc, &kp ESC, 22 23)
+
 
         /* deletion */
 
