@@ -29,9 +29,7 @@
     };
 };
 
-/ {
-    global-tapping-term-ms = <100>;
-};
+/ { global-tapping-term-ms = <100>; };
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
@@ -52,7 +50,6 @@ combo_##NAME { \
         COMBO(dash, &kp MINUS, 26 27)
         COMBO(enter, &kp ENTER, 26 28)
         COMBO(esc, &kp ESC, 22 23)
-
 
         /* deletion */
 
@@ -161,10 +158,10 @@ combo_##NAME { \
         macos {
             label = "proka";
             bindings = <
-&kp K_MUTE    &kp W       &kp E       &kp R        &kp T           &kp Z               &kp U        &kp I       &kp O       &kp LC(UP_ARROW)
-&hl LCTRL A   &hl LALT S  &hl LGUI D  &hl LSHFT F  &hl RALT G      &hr RALT N          &hr RSHFT J  &hr RGUI K  &hr LALT L  &hr RCTRL P
-&kp LG(LEFT)  &kp C       &kp V       &kp B        &my_lt 2 SPACE  &my_lt 3 BACKSPACE  &kp M        &comsem     &dotcol     &kp ENTER
-                          &my_lt 1 X                                                                &my_lt 4 H
+&kp K_MUTE    &kp W  &kp E       &kp R        &kp T           &kp Z               &kp U        &kp I       &kp O    &kp LC(UP_ARROW)
+&hl LCTRL A   &kp S  &hl LGUI D  &hl LSHFT F  &kp G           &kp N               &hr RSHFT J  &hr RGUI K  &kp L    &kp P
+&kp LG(LEFT)  &kp C  &kp V       &kp B        &my_lt 2 SPACE  &my_lt 3 BACKSPACE  &kp M        &comsem     &dotcol  &kp ENTER
+                     &my_lt 1 X                                                                &my_lt 4 H
             >;
 
             sensor-bindings =
