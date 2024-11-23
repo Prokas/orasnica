@@ -187,7 +187,7 @@ combo_##NAME { \
         navigation {
             label = "NAV";
             bindings = <
-&kp LC(LG(Q))  &kp LC(UP_ARROW)  &trans  &kp BSPC  &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &trans           &trans
+&kp LC(LG(Q))  &kp LC(UP_ARROW)  &trans  &kp BSPC  &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &trans           &bootloader
 &kp LCTRL      &trans            &trans  &trans    &kp C_MUTE    &trans        &trans    &kp UP          &trans           &kp TAB
 &trans         &trans            &trans  &trans    &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON
                                  &trans                                                  &trans
@@ -219,7 +219,7 @@ combo_##NAME { \
             bindings = <
 &bt BT_CLR      &kp SQT  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12      &kp F7  &kp F8  &kp F9  &tog 6
 &bt BT_CLR_ALL  &trans   &trans         &trans            &kp BACKSLASH      &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
-&bootloader     &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &tog 5
+&trans          &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &tog 5
                          &bt BT_DISC 0                                                            &trans
             >;
 
