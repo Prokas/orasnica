@@ -166,7 +166,7 @@ combo_##NAME { \
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_BRI_DEC C_BRIGHTNESS_INC>;
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         numbers {
@@ -220,7 +220,7 @@ combo_##NAME { \
 &bt BT_CLR  &kp SQT  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12      &kp F7  &kp F8  &kp F9  &tog 6
 &trans      &trans   &trans         &trans            &kp BACKSLASH      &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
 &trans      &trans   &trans         &trans            &fullscreen        &screenshot  &kp F1  &kp F2  &kp F3  &tog 5
-                     &bt BT_DISC 0                                                            &trans
+                     &trans                                                                   &trans
             >;
 
             sensor-bindings = <
