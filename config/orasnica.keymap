@@ -71,7 +71,7 @@ combo_##NAME { \
 
         combo_paste {
             bindings = <&kp LCMD(V)>;
-            key-positions = <14 15>;
+            key-positions = <13 14>;
         };
     };
 };
