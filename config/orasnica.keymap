@@ -75,24 +75,6 @@ combo_##NAME { \
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        /* MacOS copy paste */
-
-        combo_copy {
-            bindings = <&kp LCMD(C)>;
-            key-positions = <20 3>;
-        };
-
-        combo_paste {
-            bindings = <&kp LCMD(V)>;
-            key-positions = <20 4>;
-        };
-    };
-};
-
-/ {
     behaviors {
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
