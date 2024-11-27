@@ -63,14 +63,15 @@ combo_##NAME { \
     combos {
         compatible = "zmk,combos";
 
+        /* MacOS copy paste */
         combo_copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LCMD(C)>;
             key-positions = <3 4>;
         };
 
         combo_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <5 6>;
+            bindings = <&kp LCMD(V)>;
+            key-positions = <14 15>;
         };
     };
 };
