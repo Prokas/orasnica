@@ -217,10 +217,10 @@ combo_##NAME { \
         Numbers-Mouse {
             label = "NUM";
             bindings = <
-&mkp MCLK      &msc SCRL_UP  &msc SCRL_DOWN  &kp K_BACK    &kp ASTERISK     &kp PLUS      &kp N7  &kp N8           &kp N9  &trans
-&hl LCTRL N0   &hl LALT N6   &hl LGUI N5     &hl LSHFT N4  &hl RALT SLASH   &kp MINUS     &kp N4  &kp N5           &kp N6  &kp DOT
-&kp LG(RIGHT)  &trans        &trans          &trans        &kp RIGHT_ARROW  &kp NUMBER_0  &kp N1  &kp N2           &kp N3  &kp COLON
-                             &trans                                                               &kp KP_NUMBER_0
+&mkp MCLK      &msc SCRL_UP  &msc SCRL_DOWN  &kp RG(LEFT_BRACKET)  &kp ASTERISK     &kp PLUS      &kp N7  &kp N8           &kp N9  &trans
+&hl LCTRL N0   &hl LALT N6   &hl LGUI N5     &hl LSHFT N4          &hl RALT SLASH   &kp MINUS     &kp N4  &kp N5           &kp N6  &kp DOT
+&kp LG(RIGHT)  &trans        &trans          &trans                &kp RIGHT_ARROW  &kp NUMBER_0  &kp N1  &kp N2           &kp N3  &kp COLON
+                             &trans                                                                       &kp KP_NUMBER_0
             >;
 
             sensor-bindings = <
