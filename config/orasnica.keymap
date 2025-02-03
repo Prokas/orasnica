@@ -214,7 +214,7 @@ combo_##NAME { \
                 <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
-        numbers {
+        Numbers-Mouse {
             label = "NUM";
             bindings = <
 &mkp MCLK      &msc SCRL_UP  &msc SCRL_DOWN  &kp K_BACK    &kp ASTERISK     &kp PLUS      &kp N7  &kp N8           &kp N9  &trans
@@ -234,7 +234,7 @@ combo_##NAME { \
             bindings = <
 &kp LC(LG(Q))  &kp LC(UP_ARROW)  &trans        &kp BSPC     &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &trans           &bootloader
 &kp LCTRL      &trans            &upwinmove    &trans       &kp C_MUTE    &trans        &trans    &kp UP          &trans           &kp TAB
-&easypaste     &leftwinmove      &downwinmove  &rigwinmove  &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON
+&easypaste     &leftwinmove      &downwinmove  &rigwinmove  &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
                                  &trans                                                           &trans
             >;
 
