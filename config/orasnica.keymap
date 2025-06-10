@@ -190,7 +190,7 @@ combo_##NAME { \
         navigation {
             label = "NAV";
             bindings = <
-&kp LC(LG(Q))  &kp LC(UP_ARROW)      &trans                    &kp BSPC               &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &trans           &bootloader
+&kp LC(LG(Q))  &kp LC(UP_ARROW)      &trans                    &kp C_PLAY_PAUSE       &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &trans           &bootloader
 &kp LCTRL      &trans                &kp LA(LC(LG(UP_ARROW)))  &trans                 &kp C_MUTE    &trans        &trans    &kp UP          &trans           &kp TAB
 &trans         &kp LA(RC(RG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(RIGHT)))  &trans        &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
                                      &trans                                                                                 &trans
